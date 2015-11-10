@@ -1,0 +1,26 @@
+.section:not(.hero-section){
+  background-color: white;
+}
+.section .section-inner{
+  min-height: 700px;
+}
+.section-inner{
+  @include outer-container;
+  min-height: 500px;
+}
+.hero-section{
+  color: white;
+  text-align: center;
+  .hero-text{
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+       -moz-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+         -o-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    width: 300px;
+    z-index: 0;
+  }
+}

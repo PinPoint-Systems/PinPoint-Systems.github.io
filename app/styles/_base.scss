@@ -1,0 +1,61 @@
+body{
+  font-family: 'Lora';
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Lora';  
+}
+.page{
+  padding-top: 75px;
+}
+.page::before{
+  content: '';
+  background-image: url('/images/hero-dark.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: -1;
+}
+a{
+  color: $red;
+  &:hover{
+    color: $light-red;
+    border-bottom: solid 1px $light-red;
+  }
+}
+h1{
+  text-align: center;
+  font-size: 40px;
+}
+h2{
+  font-size: 20px;
+  font-style: italic;
+}
+.signup-modal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+  background-color: transparentize(black, .2);
+  &.closed{
+    display: none;
+  }
+}
+.modal-inner{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+     -moz-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+       -o-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: white;
+  text-align: center;
+  padding: 4em;
+}

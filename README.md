@@ -21,3 +21,7 @@ Build the concatenated, minified production version of your source into the `dis
 
 ##### gulp deploy
 Deploy the production version of your source to [GitHub Pages](http://pages.github.com/).
+
+`master` branch is live and should be deployed to using `gulp deploy`.
+
+Any source changes should be made on `develop` or feature branches.

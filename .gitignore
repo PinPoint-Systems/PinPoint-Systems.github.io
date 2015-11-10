@@ -36,7 +36,7 @@ Thumbs.db
 
 # Ignore for Yeoman-Jekyll projects #
 /node_modules
-/vendor/*
 /dist
+/vendor/*
 /.tmp
 bower_components

@@ -88,7 +88,7 @@ gulp.task('optimize', ['html', 'styles', 'scripts', 'images', 'fonts'], function
 
 // Update absolute asset paths for GitHub Pages subdirectory
 gulp.task('replace', ['optimize'], function () {
-  var ghPages = '$1http://.github.io/';
+  var ghPages = '$1http://pinpoint-systems.github.io';
 
   return gulp.src('dist/**/*.html')
     .pipe($.replace(/("|'?)\/?styles\//g,  ghPages + '/styles/'))
@@ -106,7 +106,10 @@ gulp.task('build', ['replace'], function () {
 
 gulp.task('gh-pages', function () {
   return gulp.src('dist/**/*')
-    .pipe($.ghPages())
+    .pipe($.ghPages({
+      branch: 'master',
+       repo: 'https://github.com/PinPoint-Systems/PinPoint-Systems.github.io'
+    }))
 });
 
 gulp.task('watch', function () {

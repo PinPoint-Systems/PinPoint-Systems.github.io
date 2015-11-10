@@ -8,10 +8,6 @@
 name: pinpoint-holding
 description: pinpoint-holding.
 
-author:
-  name: 
-  email: 
-
 # Exclude directories and/or files from the conversion.
 # Gulp moves styles, scripts, images and fonts directories.
 exclude: ['styles', 'scripts', 'images', 'fonts']

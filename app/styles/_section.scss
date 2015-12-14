@@ -14,6 +14,22 @@
   background-color: transparent;
   color: white;
 }
+.span-6{
+  @include span-columns(6);
+}
+.features-section .wrapper{
+  display: inline-block;
+  position: relative;
+}
+.section-2-cta{
+  color: $red;
+  @include media(768px){
+    position: absolute;
+  bottom: 0;
+  right: 0;
+  @include span-columns(6);
+  }
+}
 .signup-section.section{
   position: relative;
   background: transparent;

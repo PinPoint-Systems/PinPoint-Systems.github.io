@@ -1,15 +1,15 @@
 body{
-  font-family: 'Lora';
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 h1,h2,h3,h4,h5{
-  font-family: 'Lora';  
+  font-family: 'Helvetica Neue', 'Helvetica', sans-serif;
 }
 .page{
-  padding-top: 75px;
+  // padding-top: 75px;
 }
 .page::before{
   content: '';
-  background-image: url('/images/hero-dark.jpg');
+  background-image: url('/images/hero.jpg');
   background-size: cover;
   background-position: center;
   height: 100%;
@@ -32,7 +32,6 @@ h1{
 }
 h2{
   font-size: 20px;
-  font-style: italic;
 }
 .signup-modal{
   position: fixed;
@@ -58,4 +57,16 @@ h2{
   background-color: white;
   text-align: center;
   padding: 4em;
+}
+.button{
+  background-color: $red;
+  color: white;
+  font-weight: 900;
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 5px;
+  padding: 7px 15px;
+  &:hover{
+    background-color: $dark-red;
+  }
 }

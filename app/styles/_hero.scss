@@ -2,11 +2,11 @@
   background-color: white;
 }
 .section .section-inner{
-  height: 100vh;
+  min-height: 100vh;
 }
 .section-inner{
   @include outer-container;
-  height: 100vh;
+  min-height: 100vh;
 }
 .hero-section{
   color: white;

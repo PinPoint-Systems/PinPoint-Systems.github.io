@@ -15,7 +15,35 @@
   color: white;
 }
 .span-6{
-  @include span-columns(6);
+  @include span-columns(12);
+  @include media(768px){
+    @include span-columns(6);
+  }
+}
+.span-4{
+  @include span-columns(12);
+  @include media(768px){
+    @include span-columns(4);
+  }
+  p{
+    margin-bottom: 0em;
+  }
+}
+.how-section{
+  position: relative;
+  h2{
+    height: 5em;
+  }
+  .cta-container{
+    @include media(768px){
+      position: absolute;
+      bottom: 5em;
+      left: 0;
+    }
+    text-align: center;
+    margin-top: 5em;
+    width: 100%;
+  }
 }
 .features-section .wrapper{
   display: inline-block;

@@ -1,5 +1,6 @@
+'use strict';
 $(function(){
-  $('.nav-link.signup').on('click', function(e){
+  $('.signup').on('click', function(e){
     $('.signup-modal').toggleClass('closed');
     e.preventDefault();
   });

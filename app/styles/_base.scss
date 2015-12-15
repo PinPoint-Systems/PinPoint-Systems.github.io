@@ -7,6 +7,9 @@ h1,h2,h3,h4,h5{
 .page{
   // padding-top: 75px;
 }
+.row{
+  @include outer-container;
+}
 .page::before{
   content: '';
   background-image: url('/images/hero.jpg');
@@ -19,7 +22,7 @@ h1,h2,h3,h4,h5{
   top: 0;
   z-index: -1;
 }
-a{
+a:not(.button){
   color: $red;
   &:hover{
     color: $light-red;
@@ -68,5 +71,6 @@ h2{
   padding: 7px 15px;
   &:hover{
     background-color: $dark-red;
+    color:white;
   }
 }

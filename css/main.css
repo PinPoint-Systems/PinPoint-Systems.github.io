@@ -111,13 +111,13 @@ section.signup button:hover {
 section.about {
     height: 500px;
     padding: 90px 0;
-    background: url(../img/traintrack.png);
+    background: url(../img/traintrack.gif);
     background-position: center;
     background-size: cover;
 }
 
 section.about#caps {
-    background: url(../img/uni.png);
+    background: url(../img/uni.gif);
     background-position: center;
     background-size: cover;
 }

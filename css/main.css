@@ -19,7 +19,7 @@ header {
     height: 620px;
     padding: 60px 0 10px;
     color: rgb(255,255,255);
-    background: url(../img/welcome.png);
+    background: url(../img/welcome.gif);
     background-position: center;
     background-size: cover;
     -moz-background-size: cover;
@@ -123,7 +123,7 @@ section.about#caps {
 }
 
 section.about#sunset {
-    background: url(../img/caps.png);
+    background: url(../img/caps.gif);
     background-position: center;
     background-size: cover;
 }

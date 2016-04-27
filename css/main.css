@@ -17,7 +17,7 @@ div.wrapper {
 
 header {
     height: 620px;
-    padding: 60px 0 10px;
+    padding: 50px 0 10px;
     color: rgb(255,255,255);
     background: url(../img/welcome.gif);
     background-position: center;
@@ -65,41 +65,49 @@ header nav a:last-of-type {
 
 /* Sign up */
 
-section.signup {
+.signup {
     height: 100px;
-    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+.signup h1{
+    margin-bottom: 50px;
 }
 
-section.signup .blurb {
+.signup .blurb {
     float: left;
 }
 
-section.signup .blurb h1 {
+.signup .blurb h1 {
     font-size: 30px;
     color: #DC143C;
     padding-bottom: 15px;
 }
 
-section.signup .blurb p {
+.signup .blurb p {
     font-size: 23px;
     padding-bottom: 5px;
+    width: 530px;
 }
 
-section.signup .form {
+.signup .form {
     float: right;
 }
 
-section.signup button {
+.signup button {
     font-family: 'Lato', sans-serif;
     font-size: 23px;
     color: rgb(255,255,255);
     padding: 15px 30px;
     background: #DC143C;
     border: 0;
-    border-radius: 3px;   
+    border-radius: 3px;
+    margin-top: 100px;
 }
 
-section.signup button:hover {
+.signup button:hover {
     cursor: pointer;
     background: rgba(220, 20, 65, 0.7)
 }
@@ -150,6 +158,10 @@ section.about .blurb p{
     line-height: 35px;
     font-weight: 300;
     padding-top: 20px;
+}
+
+section.about#about .blurb p{
+    width: 490px;
 }
 
 section.about img {
@@ -409,6 +421,7 @@ footer .blurb button:hover {
 
 footer .links {
     padding-top: 150px;
+    width: 1100px;
 }
 
 footer .links .highlight {

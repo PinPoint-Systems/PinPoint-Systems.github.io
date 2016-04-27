@@ -295,6 +295,10 @@ section.tools section.wraptop {
     text-align: center;
 }
 
+section.wraptop div.point {
+    width: 300px;
+}
+
 
 section.tools section.wrapleft {
     width: 350px;

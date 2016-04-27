@@ -12,7 +12,12 @@ div.wrapper {
     width: 1024px;
     margin: 0 auto;
 }
-
+@media screen and (max-width: 1200px)
+{
+    div.wrapper {
+        width: 90%;
+    }
+}
 /* Header */
 
 header {
@@ -78,6 +83,7 @@ header nav a:last-of-type {
 
 .signup .blurb {
     float: left;
+    width: 50%;
 }
 
 .signup .blurb h1 {
@@ -89,7 +95,6 @@ header nav a:last-of-type {
 .signup .blurb p {
     font-size: 23px;
     padding-bottom: 5px;
-    width: 530px;
 }
 
 .signup .form {
@@ -179,6 +184,12 @@ section.how {
     text-align: center;
 }
 
+@media screen and (max-width: 1088px)
+{
+    section.how {
+        height: 700px;
+    }
+}
 section.how .blurb {
     text-align: left;
     float: left;
@@ -291,7 +302,15 @@ section.tools section.wrapright {
     text-align: right;
 }
 
+@media screen and (max-width: 1200px)
+{
+    section.tools section.wrapright, section.tools section.wrapleft, section.tools img {
+        width: 30%;
+    }
+}
 section.tools img {
+    position: absolute;
+    bottom: 500;
     width: 320px;
 }
 
@@ -421,7 +440,6 @@ footer .blurb button:hover {
 
 footer .links {
     padding-top: 150px;
-    width: 1100px;
 }
 
 footer .links .highlight {

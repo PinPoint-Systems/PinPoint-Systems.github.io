@@ -17,7 +17,7 @@ div.wrapper {
 
 header {
     height: 620px;
-    padding: 60px 0 10px;
+    padding: 50px 0 10px;
     color: rgb(255,255,255);
     background: url(../img/welcome.gif);
     background-position: center;
@@ -67,7 +67,13 @@ header nav a:last-of-type {
 
 section.signup {
     height: 100px;
-    padding: 50px 0;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    margin-top: 100px;
+}
+section.signup h1{
+    margin-bottom: 50px;
 }
 
 section.signup .blurb {
@@ -83,6 +89,7 @@ section.signup .blurb h1 {
 section.signup .blurb p {
     font-size: 23px;
     padding-bottom: 5px;
+    width: 530px;
 }
 
 section.signup .form {
@@ -96,7 +103,8 @@ section.signup button {
     padding: 15px 30px;
     background: #DC143C;
     border: 0;
-    border-radius: 3px;   
+    border-radius: 3px;
+    margin-top: 100px;
 }
 
 section.signup button:hover {
@@ -150,6 +158,10 @@ section.about .blurb p{
     line-height: 35px;
     font-weight: 300;
     padding-top: 20px;
+}
+
+section.about#about .blurb p{
+    width: 490px;
 }
 
 section.about img {
@@ -409,6 +421,7 @@ footer .blurb button:hover {
 
 footer .links {
     padding-top: 150px;
+    width: 1100px;
 }
 
 footer .links .highlight {

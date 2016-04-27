@@ -65,38 +65,38 @@ header nav a:last-of-type {
 
 /* Sign up */
 
-section.signup {
+.signup {
     height: 100px;
     width: 100%;
     position: relative;
     padding: 30px 0;
     margin-top: 100px;
 }
-section.signup h1{
+.signup h1{
     margin-bottom: 50px;
 }
 
-section.signup .blurb {
+.signup .blurb {
     float: left;
 }
 
-section.signup .blurb h1 {
+.warper.signup .blurb h1 {
     font-size: 30px;
     color: #DC143C;
     padding-bottom: 15px;
 }
 
-section.signup .blurb p {
+.signup .blurb p {
     font-size: 23px;
     padding-bottom: 5px;
     width: 530px;
 }
 
-section.signup .form {
+.signup .form {
     float: right;
 }
 
-section.signup button {
+.signup button {
     font-family: 'Lato', sans-serif;
     font-size: 23px;
     color: rgb(255,255,255);
@@ -107,7 +107,7 @@ section.signup button {
     margin-top: 100px;
 }
 
-section.signup button:hover {
+.signup button:hover {
     cursor: pointer;
     background: rgba(220, 20, 65, 0.7)
 }

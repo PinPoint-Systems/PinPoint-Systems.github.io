@@ -152,6 +152,10 @@ section.about .blurb p{
     padding-top: 20px;
 }
 
+section.about#about .blurb p{
+    width: 490px;
+}
+
 section.about img {
     height: 380px;
     float: right;

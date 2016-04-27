@@ -31,6 +31,9 @@ header {
     -webkit-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 header h1 {
@@ -66,42 +69,44 @@ header nav a:last-of-type {
     margin: 0;
 }
 
-
+header .wrapper {
+    flex-basis: auto;
+}
 
 /* Sign up */
 
-.signup {
-    height: 100px;
-    width: 100%;
-    position: relative;
-    padding: 30px 0;
-    margin-top: 100px;
+.signup.wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
 }
-.signup h1{
+.signup.wrapper h1{
     margin-bottom: 50px;
 }
 
-.signup .blurb {
-    float: left;
+.signup.wrapper .blurb {
+    flex-basis: auto;
+    left: 0px;
     width: 50%;
 }
 
-.signup .blurb h1 {
+.signup.wrapper .blurb h1 {
     font-size: 30px;
     color: #DC143C;
     padding-bottom: 15px;
 }
 
-.signup .blurb p {
+.signup.wrapper .blurb p {
     font-size: 23px;
     padding-bottom: 5px;
 }
 
-.signup .form {
-    float: right;
+.signup.wrapper .form {
+    flex-basis: auto;
 }
 
-.signup button {
+.signup.wrapper button {
     font-family: 'Lato', sans-serif;
     font-size: 23px;
     color: rgb(255,255,255);
@@ -112,7 +117,7 @@ header nav a:last-of-type {
     margin-top: 100px;
 }
 
-.signup button:hover {
+.signup.wrapper button:hover {
     cursor: pointer;
     background: rgba(220, 20, 65, 0.7)
 }
@@ -319,7 +324,7 @@ section.tools img {
 @media screen and (max-width: 1200px)
 {
     section.tools section.wrapright, section.tools section.wrapleft, section.tools img {
-        width: 30%;
+        width: 33%;
     }
 }
 
@@ -459,6 +464,7 @@ footer .links a {
     color: rgb(74,74,74);
     padding-right: 113px;
     text-decoration: none;
+    margin-bottom: 5px;
 }
 
 footer .links a:last-of-type {

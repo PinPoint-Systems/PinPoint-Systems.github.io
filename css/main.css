@@ -31,9 +31,6 @@ header {
     -webkit-background-size: cover;
     -ms-background-size: cover;
     -o-background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 }
 
 header h1 {
@@ -69,44 +66,42 @@ header nav a:last-of-type {
     margin: 0;
 }
 
-header .wrapper {
-    flex-basis: auto;
-}
+
 
 /* Sign up */
 
-.signup.wrapper {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding-bottom: 5px;
+.signup {
+    height: 100px;
+    width: 100%;
+    position: relative;
+    padding: 30px 0;
+    margin-top: 100px;
 }
-.signup.wrapper h1{
-    margin-bottom: 10px;
+.signup h1{
+    margin-bottom: 50px;
 }
 
-.signup.wrapper .blurb {
-    flex-basis: auto;
-    left: 0px;
+.signup .blurb {
+    float: left;
     width: 50%;
 }
 
-.signup.wrapper .blurb h1 {
+.signup .blurb h1 {
     font-size: 30px;
     color: #DC143C;
     padding-bottom: 15px;
 }
 
-.signup.wrapper .blurb p {
+.signup .blurb p {
     font-size: 23px;
     padding-bottom: 5px;
 }
 
-.signup.wrapper .form {
-    flex-basis: auto;
+.signup .form {
+    float: right;
 }
 
-.signup.wrapper button {
+.signup button {
     font-family: 'Lato', sans-serif;
     font-size: 23px;
     color: rgb(255,255,255);
@@ -117,7 +112,7 @@ header .wrapper {
     margin-top: 100px;
 }
 
-.signup.wrapper button:hover {
+.signup button:hover {
     cursor: pointer;
     background: rgba(220, 20, 65, 0.7)
 }
@@ -324,7 +319,7 @@ section.tools img {
 @media screen and (max-width: 1200px)
 {
     section.tools section.wrapright, section.tools section.wrapleft, section.tools img {
-        width: 33%;
+        width: 30%;
     }
 }
 
@@ -452,10 +447,7 @@ footer .blurb button:hover {
 }
 
 footer .links {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    padding-top: 100px;
+    padding-top: 150px;
 }
 
 footer .links .highlight {
@@ -463,12 +455,10 @@ footer .links .highlight {
 }
 
 footer .links a {
-    flex-basis: auto;
     font-size: 25px;
     color: rgb(74,74,74);
-    padding-right: 100px;
+    padding-right: 113px;
     text-decoration: none;
-    margin-bottom: 5px;
 }
 
 footer .links a:last-of-type {
@@ -485,4 +475,9 @@ footer span {
     padding: 50px 0;
     font-weight: 300;
 }
+
+
+
+
+
 

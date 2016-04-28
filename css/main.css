@@ -452,7 +452,10 @@ footer .blurb button:hover {
 }
 
 footer .links {
-    padding-top: 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 100px;
 }
 
 footer .links .highlight {
@@ -460,9 +463,10 @@ footer .links .highlight {
 }
 
 footer .links a {
+    flex-basis: auto;
     font-size: 25px;
     color: rgb(74,74,74);
-    padding-right: 113px;
+    padding-right: 100px;
     text-decoration: none;
     margin-bottom: 5px;
 }
